@@ -17,7 +17,6 @@
         <div class="content" id="order-list-content">
             <h2 class="tab-title">Order List</h2>
             <table class="order-table">
-                <thead>
                     <tr>
                         <th>Date UUID</th>
                         <th>User ID</th>
@@ -27,9 +26,8 @@
                         <th>Product Quantity</th>
                         <th>Order Date</th>
                         <th>Shipping Date</th>
+                        <th>Delivery Date</th>
                     </tr>
-                </thead>
-                <tbody>
                     {% for order in orders %}
                         <tr>
                             <td>{{ order.date_uuid }}</td>
@@ -40,9 +38,9 @@
                             <td>{{ order.product_quantity }}</td>
                             <td>{{ order.order_date }}</td>
                             <td>{{ order.shipping_date }}</td>
+                            <td>{{order.delivery_date}}</td>td>
                         </tr>
                     {% endfor %}
-                </tbody>
             </table>
             <div class="pagination">
                 {% if page > 1 %}
@@ -73,6 +71,8 @@
                 <input type="text" id="order_date" name="order_date" required><br>
                 <label for="shipping_date">Shipping Date:</label>
                 <input type="text" id="shipping_date" name="shipping_date" required><br>
+                <label for="delivery_date">Delivery Date:</label>
+                <input type="date" id="delivery_date" name="delivery_date"><br><br>
                 <input type="submit" value="Add Order">
             </form>
         </div>
