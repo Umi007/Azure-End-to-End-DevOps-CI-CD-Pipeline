@@ -25,10 +25,11 @@ steps:
   displayName: 'Deploy to Kubernetes cluster'
   inputs:
     connectionType: 'Azure Resource Manager'
-    azureSubscriptionEndpoint: 'AKS Cluster' 
+    azureSubscriptionEndpoint: 'AKS Connection' 
     command: 'apply'
     arguments: '-f application-manifest.yaml' 
     secretType: 'dockerRegistry'
+
 
 
 
