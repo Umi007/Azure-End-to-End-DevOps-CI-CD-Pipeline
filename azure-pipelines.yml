@@ -26,7 +26,7 @@ steps:
     connectionType: 'Azure Resource Manager'
     azureSubscriptionEndpoint: 'AKS Connection'
     azureResourceGroup: 'networking-resource-group'
-    kubernetesCluster: 'terraform-aks-cluster' 
+    kubernetesCluster: 'terraform-aks-cluster-umi' 
     command: 'apply'
     arguments: '-f application-manifest.yaml'
     secretType: 'dockerRegistry'
