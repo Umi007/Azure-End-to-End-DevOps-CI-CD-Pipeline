@@ -2,7 +2,7 @@
 
 Welcome to the Web App DevOps Project repo! This application allows you to efficiently manage and track orders for a potential business. It provides an intuitive user interface for viewing existing orders and adding new ones.
 
-<ins>(**_PLEASE CHECK REPOSITORY WIKI FOR BREAKDOWN OF PROJECT AND WORK COMPLETED!_**)</ins>
+
 ## Table of Contents
 
 - [Features](#features)
